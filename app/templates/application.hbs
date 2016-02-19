@@ -1,3 +1,55 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
 
-{{outlet}}
+  {{!-- heading --}}
+  <div class="row center-align">
+    <div class="col s12">
+      <h1>Welcome to I Love Rainbows</h1>
+    </div>
+  </div>
+  {{!-- end heading --}}
+
+  {{!-- eyes --}}
+  <div class="row center-align margin-top-100px">
+    <div class="col s6">
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large blue darken-3'}}
+    </div>
+
+    <div class="col s6">
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large blue darken-3'}}
+    </div>
+  </div>
+  {{!-- end eyes --}}
+
+  {{!-- nose --}}
+  <div class="row center-align margin-top-100px">
+    <div class="col s12">
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large yellow'}}
+    </div>
+
+    <div class="col s12 margin-top-10px">
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large yellow'}}
+    </div>
+  </div>
+  {{!-- end nose --}}
+
+  {{!-- mouth --}}
+  <div class="row center-align">
+    <div class="col s12 margin-top-100px">
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large pink'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large red'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large orange'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large yellow'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large green'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large light-blue'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large blue'}}
+      {{md-btn icon='mdi-action-favorite' buttonType='floating'  class='btn-large purple'}}
+    </div>
+  </div>
+  {{!-- end mouth --}}
+
+  {{rainbow-master rainbowClass='yellow'}}
+</div>
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}
