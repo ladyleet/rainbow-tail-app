@@ -5,8 +5,13 @@ const COLORS = [
 ];
 
 export default Ember.Component.extend({
-  tails: [],
-  draws: 0,
+ // This has pushObject because prototype extensions are
+  tails: Ember.computed(function() {
+    return [];
+  }),
+  draws: Ember.computed(function() {
+    return 0;
+  }),
   rainbowClass: 'yellow',
 
   didInsertElement(){
