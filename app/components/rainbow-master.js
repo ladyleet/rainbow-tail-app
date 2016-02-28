@@ -39,9 +39,9 @@ export default Ember.Component.extend({
         top: e.clientY, left: e.clientX, color: color
       });
 
-      if (this.get('tails').length >20) {
-        this.get('tails').removeAt(0)
+      if (this.get('tails').length > 20) {
+        this.get('tails').removeAt(0);
       }
-    })
+    });
   }
 });
